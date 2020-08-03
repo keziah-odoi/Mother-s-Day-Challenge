@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&family=Sacramento&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 5px;
+  display: flex;
+  align-items:center;
+
+}
+
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #8912aa;
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::after {
+  content: '';
+  width: 0;
+  height: 10px;
+  background: #F6BAFC;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -55px;
+  transition: 0.5s;
+}
+
+ul li a:hover::after{
+  width: 100%;
+}
+
+.navbar-icons .fas {
+  height: 25px;
+  margin-left: 40px;
+  cursor: pointer;
+  color: purple;
+}
+
+navbar-icons {
+  margin-left: 40px;
+}
+
+.left-column p {
+  font-size: 14px;
+  color: #5e0967;
+  margin: 50px 0;
+}
+
+
+.banner {
+  display: flex;
+  margin-right: 80px;
+}
+
+.left-column {
+  flex-basis: 50%;
+}
+
+.right-column {
+  flex-basis: 50%;
+}
+
+.right-column img {
+  width: 80%;
+  float: right;
+}
+
+.search-box {
+  width: 45%;
+  display: flex;
+  padding-bottom: 3px;
+  border-bottom: 1px solid purple;
+  margin: 10px 0 30px;
+}
+
+.search-box .fas {
+   height: 25px;
+   width: 25px;
+   cursor: pointer;
+   color: purple;
+}
+
+.search-box input {
+  width: 100%;
+  margin-left: 15px;
+  font-size: 17px;
+  border: 0;
+  outline: none;
+}
+
+.left-column h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  color: #8912aa;
+}
+
+  .left-column h3 {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #8912aa;
+  }
+
+.btn button {
+  padding: 7px 30px;
+  margin-right: 15px;
+  outline: none;
+  border: 1px solid #8912aa;
+  border-radius: 20px;
+  color: #8912aa;
+  background: transparent;
+}
+
+.btn button:hover {
+  border: none;
+  background-color: #8912aa;
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  margin-bottom: 50px;
+}
+
+.social-icons {
+  width: 200px;
+  text-align: center;
+  opacity: 0.4;
+  position: relative;
+  margin-left: 160px;
+}
+
+.social-icons .fab {
+  height: 20px;
+  margin: 0 14px;
+
+}
+.social-icons::after {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: -160px;
+  top: 10px;
+}
+
+.social-icons .fab:hover{
+  cursor: pointer;
+  color: #8912aa;
+}
